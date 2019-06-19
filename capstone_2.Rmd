@@ -1,5 +1,5 @@
 ---
-title: "Data Science Certification, Capstone CYO"
+title: "Data Science Certification, Capstone CYO."
 author: "Andres Gomez"
 date: "18 June 2019"
 output: html_document
