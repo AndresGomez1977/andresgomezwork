@@ -1,5 +1,9 @@
 
+
+#Start from edx and validation data frames already created
+
 set.seed(229)
+# if using R 3.6.0: set.seed(229, sample.kind = "Rounding")
 train_set <-edx
 test_set <- validation
 

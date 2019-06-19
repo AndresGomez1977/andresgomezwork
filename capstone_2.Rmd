@@ -11,13 +11,19 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introduction
 
-The goal of this work is to predict the quality (score between 0 and 10) of red wine, using more than ten features.
+The goal of this work is to predict the quality (score between 0 and 10) of red wine, using (initially) more than ten features.
 
-The data set to be used can be found at https://archive.ics.uci.edu/ml/datasets/Wine+Quality, together with explanation of the data. To predict the quality of the wine, We will use 11 quantitative variables: fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, and alcohol.
+The data set to be used can be found at https://archive.ics.uci.edu/ml/datasets/Wine+Quality, together with an explanation of the data. To predict the quality of the wine, We will use 11 quantitative variables: fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, and alcohol. The output variable (based on sensory data), is the quality (score between 0 and 10), and it's what we want to predict.
 
 
-```{r cars}
-summary(cars)
+
+
+```{r data summary}
+winequality.red <- read.csv("C:/Users/andres.gomez/Desktop/DS/winequality-red.csv", sep=";")
+#how data looks like
+head(winequality.red)
+#Below the summary statistics for each feature.
+summary(winequality.red)
 ```
 
 ## Including Plots
